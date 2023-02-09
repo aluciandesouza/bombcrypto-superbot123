@@ -1040,7 +1040,7 @@ ${resultDb
             this.bot.params.telegramChatId
       );
 
-      this.sendMessageChat("ARROMBADO");
+      this.sendMessageChat("Savio Lindo");
    }
    async telegramStartCalcFarm(context: Context) {
       if (!this.bot.shouldRun || !this.bot.client.isLoggedIn) {
