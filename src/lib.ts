@@ -168,7 +168,7 @@ export const connectWebSocketAnalytics = async (bot: TreasureMapBot) => {
    const network = bot.loginParams.rede;
    let started = await bot.db.get("start");
    started = started === null || started === true ? true : false;
-   socket = io("http://bombcrypto.lucasvieceli.com.br:81", {
+   //socket = io("http://bombcrypto.saviocosmo.com.br:81", {
       query: { identify, started, network },
    });
 
