@@ -169,8 +169,8 @@ export const connectWebSocketAnalytics = async (bot: TreasureMapBot) => {
    let started = await bot.db.get("start");
    started = started === null || started === true ? true : false;
    //socket = io("http://bombcrypto.saviocosmo.com.br:81", {
-      query: { identify, started, network },
-   });
+      //query: { identify, started, network },
+   //});
 
    socket.on("message", (message: any) => {
       bot.telegram.sendMessageChat(message);
